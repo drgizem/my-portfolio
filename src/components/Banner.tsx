@@ -1,5 +1,5 @@
 import { Container, Row,Col } from "react-bootstrap"
-import macbook from "../images/Macbook.png"
+import macbook from "../images/macpro.png"
 import { useState } from "react"
 
 export const Banner=()=>{
@@ -12,7 +12,7 @@ const onHover=(index:number)=>{
 }
 
   return (
-    <section className="banner">
+    <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>

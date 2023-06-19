@@ -2,7 +2,6 @@ import {Navbar,Container,Nav} from "react-bootstrap"
 import logo from "../images/logo1.png"
 import linkedin from "../images/linkedin.png"
 import github from "../images/github.png"
-import { Link } from "react-router-dom"
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -34,7 +33,9 @@ export const NavBar=()=>{
         <Navbar.Brand href="/">
           <img src={logo} alt=""/>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <span className="navbar-toggler-icon"></span>
+          </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link className={activeLink==="home" ? "active navbar-link" : "navbar-link"} onClick={()=>updateLink("home")} href="#home">Home</Nav.Link>
@@ -46,7 +47,7 @@ export const NavBar=()=>{
               <a href="https://www.linkedin.com/in/gizem-akpinar/"><img src={linkedin} alt=""/></a>
               <a href="https://github.com/drgizem"><img src={github} alt=""/></a>
             </div>
-            <Link to="/contact"><button><span>Contact</span></button></Link>
+            <Nav.Link href="#contact"><button><span>Contact</span></button></Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>
