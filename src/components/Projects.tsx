@@ -13,7 +13,9 @@ export const Projects=()=>{
         <Row>
           <Col sm={12}>
             <div className="projects-bx">
-              <h2>Projects</h2>
+            <h1 className="project-title">
+            <span className="project-text">Projects</span>
+            <span className="hover-project-text">Projects</span></h1>
               <p className="projects-bx-p">I have built various different projects responsively. If you want to see more examples, please <a href="#contact">contact me!</a></p>
               <Carousel className="projects-slider">
                 {projects.map((item)=>{

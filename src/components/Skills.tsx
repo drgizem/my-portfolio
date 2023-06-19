@@ -10,7 +10,9 @@ export const Skills=()=>{
       <Container>
         <Row>
           <div className="skill">
-            <h1>Skills</h1>
+          <h1 className="skill-title">
+            <span className="skill-text">Skills</span>
+            <span className="hover-skill-text">Skills</span></h1>
             <p>A problem is a chance for me to do my best.</p><br/>
             <p>The main area of expertise is front end development (client side of the web).</p>
             {<div className="skill-class">{skillList.map((item)=>{

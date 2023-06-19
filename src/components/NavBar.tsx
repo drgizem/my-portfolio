@@ -1,5 +1,5 @@
 import {Navbar,Container,Nav} from "react-bootstrap"
-import logo from "../images/logo1.png"
+import logo from "../images/logo3.png"
 import linkedin from "../images/linkedin.png"
 import github from "../images/github.png"
 import {
@@ -39,6 +39,7 @@ export const NavBar=()=>{
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link className={activeLink==="home" ? "active navbar-link" : "navbar-link"} onClick={()=>updateLink("home")} href="#home">Home</Nav.Link>
+            <Nav.Link className={activeLink==="about" ? "active navbar-link" : "navbar-link"} onClick={()=>updateLink("about")} href="#about">About</Nav.Link>
             <Nav.Link className={activeLink==="skills" ? "active navbar-link" : "navbar-link"} onClick={()=>updateLink("skills")} href="#skills">Skills</Nav.Link>
             <Nav.Link className={activeLink==="projects" ? "active navbar-link" : "navbar-link"} onClick={()=>updateLink("projects")} href="#projects">Projects</Nav.Link>
           </Nav>
