@@ -6,13 +6,13 @@ import { Suspense } from "react";
 import { Earth } from "./Earth";
 
 
-type Form={
+export type Form={ 
   name:string,
   email:string, 
   message:string
-}
+} 
 export const Contact=()=>{
-  const [user,setUser]=useState<Form>({} as Form)
+  const [user,setUser]=useState<Form>({} as Form) 
   const form = useRef<HTMLFormElement | null >(null);
 
   const sendEmail = (e:any) => {
@@ -41,7 +41,7 @@ export const Contact=()=>{
     <section className="contact" id="contact">
       <Container>
         <Row>
-          <Col md={5}>
+          <Col md={5} className="earth">
             <Canvas>
               <Suspense fallback={null}>
                 <Earth />
@@ -49,7 +49,9 @@ export const Contact=()=>{
             </Canvas>
           </Col>
           <Col md={7} className="input-part">
-            <h2>Contact</h2>
+          <h1 className="contact-title">
+            <span className="contact-text">Contact</span>
+            <span className="hover-contact-text">Contact</span></h1>
             <form ref={form} onSubmit={sendEmail}>
               <Row>
                 <Col size={12} sm={6} className="px-1">

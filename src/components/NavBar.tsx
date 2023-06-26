@@ -2,10 +2,11 @@ import {Navbar,Container,Nav} from "react-bootstrap"
 import logo from "../images/logo3.png"
 import linkedin from "../images/linkedin.png"
 import github from "../images/github.png"
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
 import { useEffect, useState } from "react"
+import pdf from "../assets/resume.pdf"
+import ricon from "../images/ricon.png"
+import Tooltip from '@mui/material/Tooltip';
+
 
 export const NavBar=()=>{
   const [activeLink,setActiveLink]=useState("home")
@@ -27,7 +28,6 @@ export const NavBar=()=>{
   }
 
   return (
-    <Router>
     <Navbar expand="md" className={scroll ? "scroll" : ""}>
       <Container>
         <Navbar.Brand href="/">
@@ -45,14 +45,14 @@ export const NavBar=()=>{
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/gizem-akpinar/"><img src={linkedin} alt=""/></a>
-              <a href="https://github.com/drgizem"><img src={github} alt=""/></a>
+              <Tooltip title="Linkedin"><a href="https://www.linkedin.com/in/gizem-akpinar/"><img src={linkedin} alt=""/></a></Tooltip>
+              <Tooltip title="Github"><a href="https://github.com/drgizem"><img src={github} alt=""/></a></Tooltip>
+              <Tooltip title="Resume"><a href={pdf} download="GizemResumeOfficial.pdf"><img src={ricon} alt="" style={{width:"26px"}}/></a></Tooltip>
             </div>
             <Nav.Link href="#contact"><button><span>Contact</span></button></Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </Router>
   )
 }

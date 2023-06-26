@@ -1,6 +1,7 @@
-import jobboard from "../images/jobboard.png"
-import blog from "../images/blog.png"
-import shopping from "../images/shopping.png"
+import jobboard from "../images/jobboard3.png"
+import blog from "../images/blog2.png"
+import shopping from "../images/shopping3.png"
+import booking from "../images/booking2.png"
 
 export const projects=[
   {
@@ -26,7 +27,7 @@ export const projects=[
   },{
     title:"Booking Website",
     name:"Booking",
-    imgURL:jobboard,
+    imgURL:booking,
     built:"Next js,Typescript,Bootstrap,Firebase(NoSQL Database,Authentication,Cloud Storage)",
     code:"https://github.com/drgizem/blog-page"
   }

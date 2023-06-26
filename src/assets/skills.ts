@@ -5,7 +5,7 @@ import firebaseicon from "../images/firebaseicon.png"
 import bootstrapicon from "../images/bootstrapicon.png"
 import javascripticon from "../images/javascripticon.png"
 import typescripticon from "../images/typescriticon.png"
-import nexticon from "../images/nexticon.png"
+import nexticon from "../images/nexticon2.png"
 import giticon from "../images/giticon.png"
 import vscodeicon from "../images/vscodeicon.png"
 

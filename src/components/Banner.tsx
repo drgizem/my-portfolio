@@ -1,6 +1,8 @@
 import { Container, Row,Col } from "react-bootstrap"
 import macbook from "../images/macpro.png"
-import { useState } from "react"
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+
 
 export const Banner=()=>{
 
@@ -15,13 +17,19 @@ export const Banner=()=>{
               <h2>Gizem</h2>
               <h2>Gizem</h2>
             </div>
-            <h4 className="subtitle">Front End Developer / React Js Developer</h4>
+            <div className="animation">
+              <div className="first"><div>Front End Developer</div></div>
+              <div className="second"><div>React Js Developer</div></div>
+            </div>
           </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <div className="banner-macbook">
+            <TrackVisibility>
+            {({isVisible})=> 
+            <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
               <img src={macbook} alt=""/>
-            </div>
+            </div>}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
