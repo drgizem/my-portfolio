@@ -16,7 +16,7 @@ export const projects=[
     name:"Buy buy",
     imgURL:shopping,
     built:"React,Typescript,Bootstrap,Firebase(NoSQL Database,Authentication,Cloud Storage)",
-    code:"https://github.com/drgizem/jobboard"
+    code:"https://github.com/drgizem/ShoppingApp"
   },
   {
     title:"Blog Website",
@@ -29,6 +29,6 @@ export const projects=[
     name:"Booking",
     imgURL:booking,
     built:"Next js,Typescript,Bootstrap,Firebase(NoSQL Database,Authentication,Cloud Storage)",
-    code:"https://github.com/drgizem/blog-page"
+    code:"https://github.com/drgizem/booking-website"
   }
 ]

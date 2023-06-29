@@ -2,10 +2,20 @@ import { Container, Row,Col } from "react-bootstrap"
 import macbook from "../images/macpro.png"
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
+import { useEffect,useState } from "react";
+import astro from "../images/astro.png"
 
 
 export const Banner=()=>{
-
+  const [offset, setOffset] = useState(0)
+ 
+useEffect(()=>{
+  const onScroll = () => setOffset(window.scrollY/(document.body.offsetHeight - window.innerHeight));
+  window.removeEventListener('scroll', onScroll);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  return () => window.removeEventListener('scroll', onScroll);
+},[])
+console.log(offset)
   return (
     <section className="banner" id="home">
       <Container>
@@ -32,6 +42,7 @@ export const Banner=()=>{
             </TrackVisibility>
           </Col>
         </Row>
+        <img className="scroll-img" style={{animationDelay:`calc(${offset} * -1s)`}} src={astro} alt=""/>  
       </Container>
     </section>
   )

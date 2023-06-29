@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import {skillList} from "../assets/skills"
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
@@ -10,6 +10,7 @@ export const Skills=()=>{
     <section className="skills" id="skills">
       <Container>
         <Row>
+          <Col>
           <div className="skill">
             <TrackVisibility>
           <h1 className="skill-title">
@@ -28,6 +29,7 @@ export const Skills=()=>{
               <p>{item.title}</p></span>
             })}</div>}
           </div>
+          </Col>
         </Row>
       </Container>
     </section>

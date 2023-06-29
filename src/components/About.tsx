@@ -10,7 +10,7 @@ export const About=()=>{
     <section id="about" className="about">
       <Container>
         <Row className="about-me">
-            <Col md={7}>
+          <Col md={7}>
             <h1 className="about-title">
             <span className="about-text">About me</span>
             <span className="hover-about-text">About me</span></h1>

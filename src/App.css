@@ -206,7 +206,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 
 .banner{
   margin-top: 0;
-  padding: 270px 0 100px 0;
+  padding: 25% 0 10% 0;
 }
 .content {
   position: relative;
@@ -297,9 +297,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 .banner-macbook{
   width: 120%;
 }
+.scroll-img {
+  position: fixed;
+  top: 75%;
+  bottom: 10%;
+  right: 0.5%;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  width: 130px;
+  height: 240px;
+  z-index:1;
+}
+@media screen and (max-width:768px) {
+  .scroll-img {
+    position: fixed;
+    top: 5%;
+    bottom: 10%;
+    right: 0.5%;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    width: 90px;
+    height: 190px;
+    z-index:1;
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*About*/
 .about{
-  padding: 440px 0 240px 0;
+  padding: 30% 0 10% 0;
   position: relative;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -361,7 +394,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 /*Skills*/
 
 .skills{
-  padding: 280px 0 200px 0;
+  padding: 40% 0 20% 0;
   position: relative;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -515,7 +548,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 
 /*Projects*/
 .projects {
-  padding: 280px 0 50px 0;
+  padding: 40% 0 20% 0;
   position: relative;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -679,7 +712,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 
 /*Contact*/
 .contact {
-  padding: 440px 30px 240px 30px;
+  padding: 30% 0 10% 0;
   font-family: 'Times New Roman', Times, serif;
 }
 .input-part{
@@ -780,5 +813,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 }
 
 
-
-
+@media screen and (min-width:768px) and (max-width:991px) and (min-height:950px) {
+  .contact,
+  .banner {
+    padding: 40% 0 10% 0;
+  }
+  .about{
+    padding:40% 0 10% 0;
+  }
+  .skills{
+    padding:30% 0 10% 0;
+  }
+}
+@media screen and (min-width:992px) and (max-height:1000px) {
+  .contact,
+  .about {
+    padding: 10% 0 10% 0;
+  }
+  .skills,
+  .projects{
+    padding:10% 0 10% 0;
+  }
+}
+@media screen and (min-width:992px) and (min-height:950px) {
+  .contact,
+  .about {
+    padding: 30% 0 10% 0;
+  }
+  .skills,
+  .projects{
+    padding:30% 0 10% 0;
+  }
+}
+@media screen and (min-width:1400px) and (min-height:1000px) {
+  .contact,
+  .about {
+    padding: 20% 0 10% 0;
+  }
+  .skills,
+  .projects{
+    padding:20% 0 10% 0;
+  }
+  .banner{
+    padding: 10% 0 10% 0;
+  }
+}
