@@ -1,7 +1,7 @@
 import jobboard from "../images/jobboard3.png"
 import blog from "../images/blog2.png"
 import shopping from "../images/shopping3.png"
-import booking from "../images/booking2.png"
+import estate from "../images/realestate.png"
 
 export const projects=[
   {
@@ -16,7 +16,7 @@ export const projects=[
     name:"Buy buy",
     imgURL:shopping,
     built:"React,Typescript,Bootstrap,Firebase(NoSQL Database,Authentication,Cloud Storage)",
-    code:"https://github.com/drgizem/ShoppingApp"
+    code:"https://github.com/drgizem/Ecommerce-website"
   },
   {
     title:"Blog Website",
@@ -25,10 +25,10 @@ export const projects=[
     built:"Next js,Typescript,Sass,Firebase(NoSQL Database,Authentication)",
     code:"https://github.com/drgizem/blog-page"
   },{
-    title:"Booking Website",
-    name:"Booking",
-    imgURL:booking,
-    built:"Next js,Typescript,Bootstrap,Firebase(NoSQL Database,Authentication,Cloud Storage)",
-    code:"https://github.com/drgizem/booking-website"
+    title:"Real Estate Website",
+    name:"Real Esty",
+    imgURL:estate,
+    built:"React,Typescript,Bootstrap,Firebase(NoSQL Database,Authentication)",
+    code:"https://github.com/drgizem/real-estate-website"
   }
 ]
