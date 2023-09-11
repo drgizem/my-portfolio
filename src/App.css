@@ -555,7 +555,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 .projects-bx {
   background: linear-gradient(90deg, rgb(35, 33, 33) 0%, rgb(69, 69, 74) 100%);
   border-radius: 64px;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
   padding: 50px 50px 80px 50px;
   margin-top: -60px;
   box-shadow: 10px 15px 15px rgba(224, 224, 214, 0.2);
@@ -584,12 +586,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   filter: drop-shadow(0 0 10px #AA367C);
 }
 .projects-bx-p {
-    color: white;
-    font-size: 20px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    float: left;
-    margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  float: left;
+  margin-bottom: 10px;
 }
 .projects a{
   text-decoration: none;
@@ -649,16 +651,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
     right: 5%;
   }
 }
-@media screen  and (min-width:481px) and (max-width:575px) {
+@media screen  and (min-width:481px) and (max-width:520px) {
   .projects-img{
-    width: 79%;
-    height: 80%;
+    width: 77%;
+    height: 81%;
     position: absolute;
     top: 4%;
     right: 4.5%;
   }
 }
-@media screen  and (min-width:400px) and (max-width:480px) {
+@media screen  and (min-width:521px) and (max-width:575px) {
+  .projects-img{
+    width: 79%;
+    height: 81%;
+    position: absolute;
+    top: 4%;
+    right: 4.5%;
+  }
+}
+@media screen  and (min-width:400px) and (max-width:450px) {
+  .projects-img{
+    width: 72%;
+    height: 81%;
+    position: absolute;
+    top: 4%;
+    right: 5.5%;
+  }
+}
+@media screen  and (min-width:451px) and (max-width:480px) {
   .projects-img{
     width: 75%;
     height: 81%;
@@ -692,7 +712,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 }
 .info-part a{
   font-size: 24px;
-  margin-left: 100px;
 }
 .carousel-control-next{
   justify-content: flex-end;

@@ -14,7 +14,8 @@ export const Projects=()=>{
         <Row>
           <Col xs={12}>
             <div className="projects-bx">
-            <h1 className="project-title">
+              <div>
+              <h1 className="project-title">
             <span className="project-text">Projects</span>
             <span className="hover-project-text">Projects</span></h1>
             <TrackVisibility>
@@ -23,7 +24,9 @@ export const Projects=()=>{
               <p className="projects-bx-p">I have built various different projects responsively. If you want to see more examples, please <a href="#contact">contact me!</a></p>
             </div>}
             </TrackVisibility>
-              <Carousel className="projects-slider">
+              </div>
+           <div>
+           <Carousel className="projects-slider">
                 {projects.map((item)=>{
                 return <Carousel.Item>
                   <Row>
@@ -39,6 +42,7 @@ export const Projects=()=>{
                   </Col></Row></Carousel.Item>
                 })}
               </Carousel>
+           </div>
             </div>
           </Col>
         </Row>
