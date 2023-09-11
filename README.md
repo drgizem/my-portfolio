@@ -1,4 +1,12 @@
+# My Portfolio
 
+It was prepared by using
+- React js
+- Typescript
+- Three js
+- Bootstrap
+  
+to view live demo---> [Click](https://main--gizemakpinar.netlify.app/)
 
 # Getting Started with Create React App
 
