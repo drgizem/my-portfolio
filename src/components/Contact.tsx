@@ -6,13 +6,13 @@ import { Suspense } from "react";
 import { Earth } from "./Earth";
 
 
-export type Form={ 
+export type MyForm={ 
   name:string,
   email:string, 
   message:string
 } 
 export const Contact=()=>{
-  const [user,setUser]=useState<Form>({} as Form) 
+  const [user,setUser]=useState<MyForm>({} as MyForm) 
   const form = useRef<HTMLFormElement | null >(null);
 
   const sendEmail = (e:any) => {
